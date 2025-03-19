@@ -1,8 +1,8 @@
 {
-  "name": "vitessce-template",
+  "name": "vitessce-PanKbase-20250319",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vandydata.github.io/vitessce-template/",
+  "homepage": "https://vandydata.github.io/vitessce-PanKbase-20250319/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
