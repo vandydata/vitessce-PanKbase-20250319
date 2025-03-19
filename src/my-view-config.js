@@ -9,7 +9,7 @@ export const myViewConfig = {
               "files": [
                   {
                       "fileType": "anndata.zarr", 
-                      "url": "https://cds-pancreatlas-public.s3.amazonaws.com/Elgamal_et_al_Diabetes_2023.small.ome.zarr/", 
+                      "url": "https://cds-pancreatlas-public.s3.us-east-1.amazonaws.com/PanKbase/pankbase__min.cells0.01pct_min.features5pct_rmDoublets_harmony_data.zarr/", 
                       "options": {
                           "obsEmbedding": [
                               {
