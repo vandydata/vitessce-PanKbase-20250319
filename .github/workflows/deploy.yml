@@ -34,7 +34,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Debug GitHub Pages settings
+        run: |
+          echo "Checking if GitHub Pages is enabled..."
+          curl -I https://github.com/vandydata/vitessce-PanKbase-20250319/settings/pages
+          echo "GitHub Pages settings checked."
       - name: Deploy to GitHub Pages
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         id: deployment
         uses: actions/deploy-pages@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
