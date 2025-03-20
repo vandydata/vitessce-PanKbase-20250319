@@ -24,6 +24,7 @@ jobs:
       - name: Build React app
         run: npm run build
       - name: Upload artifact
+        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
