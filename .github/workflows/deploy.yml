@@ -30,15 +30,10 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     needs: build
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
     steps:
-      - name: Configure pages
-        uses: actions/configure-pages@v4
-        
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
