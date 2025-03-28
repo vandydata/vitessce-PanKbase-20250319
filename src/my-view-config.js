@@ -1,15 +1,15 @@
 export const myViewConfig = {
-    "name": "Vittesce OMICS vieweer",
-    "version": "1.0.4",
+    "name": "PanKbase scRNA-Seq - Vitessce OMICS vieweer",
+    "version": "1.0.15",
     "description": "",
     "datasets": [
           {
               "uid": "A", 
-              "name": "Elgamal et al, Diabetes 2023", 
+              "name": "2025-03-28 - PanKbase scRNA-Seq", 
               "files": [
                   {
                       "fileType": "anndata.zarr", 
-                      "url": "https://cds-pancreatlas-public.s3.us-east-1.amazonaws.com/PanKbasemin.cells0.01pct_min.features5pct_rmDoublets_harmony_data.zarr/", 
+                      "url": "https://cds-pancreatlas-public.s3.us-east-1.amazonaws.com/PanKbase/min.cells0.01pct_min.features5pct_rmDoublets_harmony_data.zarr/", 
                       "options": {
                           "obsEmbedding": [
                               {
@@ -25,9 +25,34 @@ export const myViewConfig = {
                           ], 
                           "obsSets": [
                               {
-                                  "name": "Cell Types", 
+                                  "name": "celltypes", 
                                   "path": "obs/celltypes"
+                              },
+                              {
+                                "name": "Disease Status", 
+                                "path": "obs/diabetes_status_description"
+                              },
+                              {
+                                "name": "Age", 
+                                "path": "obs/Age"
+                              },
+                              {
+                                "name": "Sex", 
+                                "path": "obs/Reported_gender"
+                              },
+                              {
+                                "name": "Ethnicity", 
+                                "path": "obs/Ethnicity"
+                              },
+                              {
+                                "name": "Treatments", 
+                                "path": "obs/Treatments"
+                              },
+                              {
+                                "name": "RRID", 
+                                "path": "obs/RRID"
                               }
+                            
                           ],
                           "obsFeatureMatrix": {
                               "path": "X"
@@ -38,11 +63,11 @@ export const myViewConfig = {
           }
       ], 
       "coordinationSpace": {
-          "dataset": {"A": "A"}, 
-          "embeddingType": {"A": "UMAP"}
-      }, 
+        "dataset": {"A": "A"}, 
+        "embeddingType": {"A": "UMAP", "B": "PCA"}
+    },
       "layout": [
-          {
+        {
               "component": "scatterplot", 
               "coordinationScopes": {
                   "dataset": "A", 

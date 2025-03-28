@@ -11,17 +11,18 @@ Working repo and Github pages build for the VITESSCE OMICS Viewer, leveraging ob
 
 ## How to use this repo
 
-2. Clone repo
-3. Edit `src/my-view-config.js` to point to appropriate S3 bucket and object params
-4. Edit `public/index.html` page TITLE and DESCRIPTION
-5. For local testing, open terminal:
+1. Clone repo
+2. Edit `src/my-view-config.js` to point to appropriate S3 bucket and object params
+3. Edit `public/index.html` page TITLE and DESCRIPTION
+4. For local testing, open terminal:
     ```bash
     cd src
+    npm install # most likely
     npm start
     ```
-6. Open browser to `http://localhost:3000`
-7. Edit and test as needed
-8. Pushing to repo will use GH actions to build the React app
+5. Open browser to `http://localhost:3000`
+6. Edit and test as needed
+7. Pushing to repo will use GH actions to build the React app
 
 ## Fork for new dataset / Vitessce instance
 
