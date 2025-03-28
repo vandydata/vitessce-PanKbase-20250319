@@ -9,7 +9,7 @@ export const myViewConfig = {
               "files": [
                   {
                       "fileType": "anndata.zarr", 
-                      "url": "https://cds-pancreatlas-public.s3.us-east-1.amazonaws.com/PanKbase/pankbase__min.cells0.01pct_min.features5pct_rmDoublets_harmony_data.zarr/", 
+                      "url": "https://cds-pancreatlas-public.s3.us-east-1.amazonaws.com/PanKbasemin.cells0.01pct_min.features5pct_rmDoublets_harmony_data.zarr/", 
                       "options": {
                           "obsEmbedding": [
                               {
@@ -25,8 +25,8 @@ export const myViewConfig = {
                           ], 
                           "obsSets": [
                               {
-                                  "name": "CellType", 
-                                  "path": "obs/CellType"
+                                  "name": "Cell Types", 
+                                  "path": "obs/celltypes"
                               }
                           ],
                           "obsFeatureMatrix": {
